@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Navigation Bar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .vertical-nav {
+        width: 200px;
+        list-style-type: none;
+        padding: 0;
+      }
+      .vertical-nav li {
+        background-color: #e0e0e0; /* Light grey */
+        padding: 10px;
+        border-bottom: 1px solid #ddd; /* Light grey border */
+      }
+      .vertical-nav li:first-child {
+        background-color: orange; /* Highlighted 'Home' item */
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .vertical-nav li:hover {
+        background-color: #c0c0c0; /* Darker grey on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="vertical-nav">
+      <li>Home</li>
+      <li>Java</li>
+      <li>CSS</li>
+      <li>HTML</li>
+      <li>Bootstrap</li>
+    </ul>
+  </body>
+</html>

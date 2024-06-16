@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Navigation Bar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .horizontal-nav {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 20px;
+        padding: 10px;
+      }
+      .horizontal-nav li {
+        background-color: #d3d3d3; /* Light grey background */
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-right: 1px solid #a9a9a9; /* Dark grey border */
+      }
+      .horizontal-nav li:last-child {
+        border-right: none; /* No border for last item */
+      }
+      .horizontal-nav li:hover,
+      .horizontal-nav li.active {
+        background-color: #a9a9a9; /* Darker grey for active/hover state */
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="horizontal-nav">
+      <li>Home</li>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </body>
+</html>
