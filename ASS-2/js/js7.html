@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("./background.jpeg");
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./train.jpeg" alt="error" id="train" />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <h1 style="color: rgb(20, 20, 110)">
+      Click the following buttons to handle animation
+    </h1>
+    <input type="button" value="start" onclick="start()" />
+    <input type="button" value="stop" onclick="stop()" />
+    <script>
+      var animation;
+      function init() {
+        train.style.position = "absolute";
+        train.style.left = "0px";
+      }
+      window.onload = init;
+
+      function start() {
+        let train = document.getElementById("train");
+        train.style.left = parseInt(train.style.left) + 10 + "px";
+        animation = setTimeout(start, 20);
+      }
+      function stop() {
+        let train = document.getElementById("train");
+        clearTimeout(animation);
+        train.style.left = "paused";
+      }
+    </script>
+  </body>
+</html>

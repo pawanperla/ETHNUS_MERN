@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+
+    <div>
+      <label for="i1">1st Number:</label>
+      <input type="number" id="i1" placeholder="enter Number" />
+    </div>
+    <div>
+      <label for="i2">2nd Number:</label>
+      <input type="number" id="i2" placeholder="enter Number" />
+    </div>
+    <div>
+      <button onclick=" f1()">Multiply</button>
+      <button onclick="f2()">divide</button>
+    </div>
+    <div>
+      <h2>The Result Is:</h2>
+      <p id="result"></p>
+    </div>
+
+    <script>
+      function f1() {
+        var x = document.getElementById("i1").value;
+        if (x === "") {
+          alert("Please enter 1st number");
+          return;
+        }
+        var y = document.getElementById("i2").value;
+        if (y === "") {
+          alert("Please enter 2nd number");
+          return;
+        }
+        var result = x * y;
+        document.getElementById("result").innerText = result;
+      }
+      function f2() {
+        var x = document.getElementById("i1").value;
+        var y = document.getElementById("i2").value;
+        if (x === "") {
+          alert("Please enter 1st number");
+          return;
+        }
+        if (y === "") {
+          alert("Please enter   2nd number");
+          return;
+        }
+        var result = x / y;
+        document.getElementById("result").innerText = result;
+      }
+    </script>
+  </body>
+</html>
